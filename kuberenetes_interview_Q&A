@@ -1,0 +1,28 @@
+1.what is the difference between container and kubernetes?
+ans: docker is a container platform whereas kubernets is container orchestration environment 
+     that offers you auto healing,auto scaling,clusting and enterprise level support like load balancing
+
+2.what are the main diffrence b/w docker swarm and kubernetes?
+ans: k8 is best suited for large organisatins as it offers scalability,networking
+     docker swarm is suited for small applications.
+
+3.what is the difference between docker container and kubernetes pod?
+ans: A pod in kubernetes is a runtiume specificaion of a container in docker .
+     A pod provides more declarative way of defining using yaml files and you can run more than once container inside a single pod.
+
+4.what is namespace in  kubernetes?
+ans: In kubernetes namespace is logical isolation of  resources, network policies and rbac and everything.
+      for eg.,there are two projects using same k8s cluster. one project can use ns1 and another can use ns2 without overlap and authentication problem.
+
+5.what is the role of kube proxy?
+ans: kube-proxy works by maintaining a set of network rules on each node on the cluster, which are updated dynamically as services are added or removed.
+     when a client sends a request to service, the request is intercepted by kube_proxy  on the node where it was received.
+     kube-proxy then looks up the destination endpoint for the service and routes the request accordingly.
+     kube-proxy is essential component of k8s cluster as it ensures services can communicate with each other.
+
+7 what are the different type of services?
+ans: 1.cluster ip mode
+     2.nodeport mode
+     3.load balancer mode
+
+
