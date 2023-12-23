@@ -25,7 +25,7 @@ aws configure set default.output json;
 - kubectl config view
 
 # To check the status of cluster 
-- aws eks --region ap-southeast-1 describe-cluster --name K8_Vinitha --query cluster.status
+- aws eks --region ap-northeast-1 describe-cluster --name K8_Vinitha --query cluster.status
 
 # To check the services running in master 
 -kubectl get svc
