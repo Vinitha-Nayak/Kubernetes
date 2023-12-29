@@ -17,6 +17,7 @@ Service act as the load balancer it uses the component called kube proxy.
 Service keeps monitoring using labels even though the ip address got changed.
 
 whenever you creating service resources you've types modes:
+
 1.clusterIP
   - Using cluster ip you will get load balancer and service discovery. Application accessed inside kubernetes
   
