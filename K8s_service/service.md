@@ -1,5 +1,7 @@
 why we need service?
+
 suppose lets assume there is no service. For example developer team of 3 members. You created the cluster and deployed the application on pod. And developers access the application using created pods.
+
 user1 access the application 172.3.4.1
 user2 access the application on 172.3.5.1
 user2 access the application on 172.3.6.1
