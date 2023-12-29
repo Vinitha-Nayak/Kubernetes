@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: Car_project-deployment
+  labels:
+    app: Car_project
+spec:
+  replicas: 6
+  selector:
+    matchLabels:
+      app: Car_project
+  template:
+    metadata:
+      labels:
+        app: Car_project
+    spec:
+      containers:
+      - name: Car_project
+        image: vinitha25/car_project_vin
+        ports:
+        - containerPort: 80
+
